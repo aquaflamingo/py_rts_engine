@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rts_engine"
+version = "0.1.0"
+description = "A simple RTS game engine built with Pygame"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame>=2.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["rts_engine"]
